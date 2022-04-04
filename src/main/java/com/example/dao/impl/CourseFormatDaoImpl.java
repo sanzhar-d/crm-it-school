@@ -27,7 +27,7 @@ public class CourseFormatDaoImpl implements CourseFormatDao {
                     "lessons_per_week    INTEGER         NOT NULL, " +
                     "is_online          BOOLEAN NOT NULL DEFAULT FALSE, " +
                     "" +
-                    "CONSTRAINT pk_course_id PRIMARY KEY(id))";
+                    "CONSTRAINT pk_course_format_id PRIMARY KEY(id))";
 
             Log.info(this.getClass().getSimpleName(), Statement.class.getSimpleName(), " creating statement...");
             statement = connection.createStatement();
